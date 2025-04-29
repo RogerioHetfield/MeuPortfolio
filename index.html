@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Meus Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+
+        <img src="./img/eu3.png" alt="Foto Rogério Guimarãse" class="foto-perfil">
+        <h1>Rogério Guimarães</h1>
+        <p class="cabecalho-subtitulo">Desenvolvedor Front End</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá, meu nome é Rogério. Tenho 30 anos e atualmente, atuo como operador de caixa em um supermercado —
+                uma função que me ensinou muito sobre responsabilidade, empatia no atendimento ao público e trabalho em
+                equipe. Agora, estou trilhando um novo caminho: a programação.
+                <br><br>
+                Desde sempre sou apaixonado por Tecnologia. Tive o primeiro contato com a programação a 2 anos, porém
+                por causa de problemas financeiros, não consegui seguir estudando. Mas agora graças a Deus estou tendo a
+                oportunidade de focar 100% nessa área onde gosto muito. <br><br>Mas minha história na área da Tecnologia
+                vem a mais de 10 anos atrás. No momento estou estudando desenvolvimento web através da empresa Dev Club,
+                e me dedicando todos os dias para adquirir conhecimentos sólidos em linguagens como HTML, CSS,
+                JavaScript e outras tecnologias. Gosto de resolver problemas, aprender na prática e encarar novos
+                desafios com determinação.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="./img/projetonike.PNG" alt="projeto da nike" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Site da Nike</h3>
+                    <p class="paragrafo-projetos">Nike | Esporte, Estilo e Performance — Encontre Seu Próximo Desafio
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <div class="caixa-textos-projetos">
+                    <img src="./img/projetomario.PNG" alt="projeto do mario brothers" class="projetos-imagem">
+                    <h3 class="info-projetos">Mario Brothers Encanadores</h3>
+                    <p class="paragrafo-projetos">Mario Brothers Encanadores | Soluções Rápidas, Divertidas e Sem
+                        Complicação!</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+    
+            <div class="grupo-form">
+                <input type="text" id="nome" placeholder="Nome" class="campo-form">
+            </div>
+            <div class="grupo-form">
+                <textarea id="mensagem" class="campo-form" placeholder="Digite Sua Mensagem..." rows="6"></textarea>
+            </div>
+    
+            <button class="enviarzap" type="submit">Enviar para Whatsapp</button>
+    
+        </form>
+    </section>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
